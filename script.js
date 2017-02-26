@@ -9,8 +9,8 @@ present = moment(present).add(h, 'hours');
 m = premiere.diff(present, 'm'); // Diff in minutes
 present = moment(present).add(m, 'minutes');
 s = premiere.diff(present, 's'); // Diff in seconds
-backCount(d, h, m, s) // 0 Dias 0 Horas 1 Minuto 20 Segundos
-function backCount(d, h, m, s) {
+countDown(d, h, m, s) // 0 Dias 0 Horas 1 Minuto 20 Segundos
+function countDown(d, h, m, s) {
     var interval = setInterval(function() {
         if (s > 0) { s--; } else {
             if (m > 0) {
