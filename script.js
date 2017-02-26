@@ -9,7 +9,13 @@ present = moment(present).add(h, 'hours');
 m = premiere.diff(present, 'm'); // Diff in minutes
 present = moment(present).add(m, 'minutes');
 s = premiere.diff(present, 's'); // Diff in seconds
+
+var capa = document.getElementById("countDown");
+var clock = document.createElement("tr");
+
 countDown(d, h, m, s) // 0 Dias 0 Horas 1 Minuto 20 Segundos
+capa.appendChild(clock);
+
 function countDown(d, h, m, s) {
     var interval = setInterval(function() {
         if (s > 0) { s--; } else {
@@ -33,6 +39,7 @@ function countDown(d, h, m, s) {
                 }
             }
         }
-        document.body.innerHTML = d + " d " + h + " h " + m + " m " + s + " s"
+        //clock.innerHTML = d + " d " + h + " h " + m + " m " + s + " s"
+        clock.innerHTML = "<td>"+ d + "</td> <td>" + h + "</td> <td>" + m + "</td> <td>" + s + "</td>";
     }, 1000);
 }

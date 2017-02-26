@@ -1,3 +1,26 @@
-html, body {
-	height: 100%;
+html,
+body {
+    height: 100%;
+    background-color: #000;
+	font-family: 'Cinzel', serif;
+}
+
+.count-down {
+    color: white;
+    text-align: center;
+    margin-top: 25%;
+    font-size: 5em;
+}
+
+.no-margin {
+    margin: 0 auto;
+}
+
+.date-header{
+	font-size: .2em;
+	margin: 5px 15px;
+}
+
+.fix-column th, td{
+	width: 120px;
 }
