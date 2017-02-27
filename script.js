@@ -1,5 +1,5 @@
 var present = moment().format('YYYY-MM-DD HH:mm:ss');
-var premiere = moment("2017-06-25 08:30:00", "YYYY-MM-DD HH:mm:ss");
+var premiere = moment("2017-06-25 20:30:00", "YYYY-MM-DD HH:mm:ss");
 
 var d, h, m, s;
 d = premiere.diff(present, 'd'); // Diff in days
