@@ -2,7 +2,7 @@ html,
 body {
     background-color: #000;
     font-family: 'Cinzel', serif;
-    background-image: url('snow.png'), url('snow3.png'), url('snow2.png');
+    background-image: url('imgs/snow.png'), url('imgs/snow3.png'), url('imgs/snow2.png');
     animation: snow 3s linear infinite;
 }
 
