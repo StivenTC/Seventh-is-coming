@@ -1,5 +1,5 @@
 var present = moment().format('YYYY-MM-DD HH:mm:ss');
-var premiere = moment("2017-06-25 20:30:00", "YYYY-MM-DD HH:mm:ss");
+var premiere = moment("2017-07-16 20:30:00", "YYYY-MM-DD HH:mm:ss");
 
 var d, h, m, s;
 d = premiere.diff(present, 'd'); // Diff in days
@@ -13,7 +13,7 @@ s = premiere.diff(present, 's'); // Diff in seconds
 var capa = document.getElementById("countDown");
 var clock = document.createElement("tr");
 
-countDown(d, h, m, s) // 0 Dias 0 Horas 1 Minuto 20 Segundos
+countDown(d, h, m, s);
 capa.appendChild(clock);
 
 function countDown(d, h, m, s) {
@@ -39,7 +39,7 @@ function countDown(d, h, m, s) {
                 }
             }
         }
-        //clock.innerHTML = d + " d " + h + " h " + m + " m " + s + " s"
+        //document.body.innerHTML = d + " d " + h + " h " + m + " m " + s + " s"
         clock.innerHTML = "<td>"+ d + "</td> <td>" + h + "</td> <td>" + m + "</td> <td>" + s + "</td>";
     }, 1000);
 }

@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+
+    "name": "Seventh is comming",
+    "description": "Countdown to the new season Game of Thrones.",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "imgs/icon.png"
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+
+    "permissions": [
+        "bookmarks"
+    ]
+}
