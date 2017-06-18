@@ -12,13 +12,11 @@ body {
     width: 100%;
     height: 100%;
     z-index: 999;
-    background-color: transparent;
-    background-image: url('../imgs/snow/snow.png'), url('../imgs/snow/snow3.png'), url('../imgs/snow/snow2.png');
-    animation: snow 3s linear infinite;
+    background-color: lightblue;
 }
 
 .count-down {
-	position: relative;
+    position: relative;
     opacity: .5;
     color: white;
     text-align: center;
@@ -27,16 +25,13 @@ body {
     margin: 0 auto;
     text-align: center;
 }
+
+
 /*.clock{
 	position: absolute;
 	bottom: 10%;
 	left: 25%;
 }*/
-
-.throne {
-    height: 80%;
-    width: 50%;
-}
 
 .no-margin {
     margin: 0 auto;
@@ -50,47 +45,4 @@ body {
 .fix-column th,
 td {
     width: 120px;
-}
-
-
-/*Keyframes*/
-
-@keyframes snow {
-    0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-    }
-}
-
-@-moz-keyframes snow {
-    0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-    }
-}
-
-@-webkit-keyframes snow {
-    0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-    50% {
-        background-color: #000;
-    }
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-        background-color: #000;
-    }
-}
-
-@-ms-keyframes snow {
-    0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-    }
 }
